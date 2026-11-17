@@ -96,12 +96,35 @@ Sibling-item conflicts: the item agrees with its own evidence, but another item 
 4. `changing_evidence|4|21863ea9-dde4-4917-87d4-2c4af770144a|49` - "Who is Buster's veterinarian?" gold Dr. Rodriguez; siblings give Dr. Garcia and Dr. Singh.
 5. `changing_evidence|5|5d7bb371-4109-47a2-b1b8-c816675c69d3|7` - "What is the company's work-from-home policy?" gold four office days; sibling gold two remote days.
 
-Answer inside the question (S5: 8 items in the subset, 7 reviewed):
+Answer inside the question (S5: 8 items in the subset; the first pass read 7, the extension read all 8):
 6. `assistant_facts_evidence|1|4308b9d3-abb6-439b-94d5-246da7e0c420|68` - the question offers "Traditional or Roth", gold "Roth".
 7. `user_evidence|2|0050e213-5032-42a0-8041-b5eef2f8ab91|77` - the question says "moved into my townhouse two months ago", gold "Two months."
 8. `user_evidence|1|4c69f758-cc00-48db-a908-7485ef3c3d99|16` - gold "Digital Marketing Analytics" is the question's own phrase.
 9. `user_evidence|1|6778a296-5b31-4ed2-a576-eaa706712df9|45` - gold "urgent-deal-support", the question says "urgent deal support".
 10. `assistant_facts_evidence|1|581a7aa3-5c47-4995-98b8-bfc97915f8b5|30` - the question quotes a jargon verb and asks for the shorter word the assistant suggested in its place; gold "use".
+
+## Confirmed flaws (post-hoc full reads, group `flagged_full`)
+
+Added after the first write-up, at the coordinator's request, and logged in `PLAN.md` before reading. These are census reads of every item a check flagged, not samples, and they are kept out of the random-sample result above (0/60 key errors, unchanged). Verdicts: `out/hand_review.jsonl`, records with `"group": "flagged_full"` (230 records; 14 of the 72 D4 items and 8 D3 items were also read in the first pass under `flagged`).
+
+| flaw | count | denominator | rate, Wilson 95% | read in full | example ids |
+|---|---|---|---|---|---|
+| Evidence label text is not verbatim in the item's conversations; the answer is still supported | 158 | 45159 items | 0.35% [0.30%, 0.41%] | yes, all 158 | `changing_evidence|2|66a40728-11a8-4f6a-8064-fbf12953a97d|64`, `assistant_facts_evidence|1|03d6ce14-747d-43cb-8b31-d9c73391f58c|41` |
+| Evidence label present only under a formatting difference (whitespace, quotes, unicode): a check artefact | 0 | 158 D3 items | 0.00% [0.00%, 2.37%] | yes | none (an alphanumeric-only match also failed for all 150 new items) |
+| Answer not supported anywhere in the item's conversations (definite defect) | 0 | 45159 items | 0.00% [0.00%, 0.01%] | yes, all 158 D3 items | none |
+| Same persona, identical question, different gold, each gold right for its own evidence (context-dependent question) | 63 items in 30 groups | 45159 items | 0.14% [0.11%, 0.18%] | yes, all 72 D4-semantic items | `changing_evidence|3|46c13060-46dd-448f-b6c7-5e932c5e8a06|50`, `changing_evidence|4|21863ea9-dde4-4917-87d4-2c4af770144a|49` |
+| Same, golds contradict each other on the same evidence (definite key error) | 0 | 72 items, 34 groups | 0.00% [0.00%, 5.07%] of items | yes | none |
+| Sibling golds are paraphrases of one answer (no conflict) | 9 items in 4 groups | 72 items | n/a | yes | `changing_evidence|2|142d7f3e-1d53-445e-9ad2-920df96b43ea|12` group (Thursday at 1 PM), `changing_evidence|3|443a4f82-82c4-4d72-8d82-63137b353a26|19` (virtual kick-off pair) |
+| Gold answer inside the question text; a reader with no memory could answer or guess | 8 | 45159 items | 0.02% [0.01%, 0.04%] | yes, all 8 | `user_evidence|1|4c69f758-cc00-48db-a908-7485ef3c3d99|16`, `assistant_facts_evidence|1|4308b9d3-abb6-439b-94d5-246da7e0c420|68` |
+| Abstention category has one constant gold string | 8917 | 8917 abstention items | 100% [99.96%, 100%] | yes (census) | `abstention_evidence|1|53c017a4-a4f6-4c03-bb43-97e01aff46c4|21`, `abstention_evidence|1|581a7aa3-5c47-4995-98b8-bfc97915f8b5|98` |
+
+Details of the three reads:
+
+- D4 (72 items, 34 semantic groups). 30 groups (63 items) are class (a): each gold fits its own evidence and the evidence conversations differ. 4 groups (9 items) are class (c): paraphrases (client meeting Thursday at 1 PM, thermostat Thursday, exhibition Sunday, virtual kick-off). 0 groups are class (b): no pair shares an evidence conversation, so no gold contradicts another on the same evidence. Metadata only: in all 34 groups the sibling items have different evidence-conversation ids; 12 groups have siblings in the same file (same persona and evidence-count directory), 22 in different files. `pre_mixed_testcases` was not downloaded, so whether siblings ever share a context window is still untested. The 63 are a property of the design (a question that depends on which conversation is in context) until that is checked; they are not wrong against their own evidence.
+- D3 (158 items, all read). All 158 are wording or label differences with the answer intact. Of the 150 read in the extension: 64 have an evidence label that is longer than the conversation line (the line is contained in the label, for example an extra opening clause or two lines merged), 62 have a best-match ratio of at least 0.85 (the check threshold of 0.90 split near-identical text), and 39 have a ratio below 0.6 (the labelled line is essentially absent from the conversation; 55 of the 150 are abstention items, where the refusal is still right because no conversation line gives the answer). None is a formatting artefact, so the corrected rate of formatting artefacts is 0 and the 0.35% stays as "evidence label not verbatim", with 0 unsupported answers.
+- S5 (8 items, all read). A reader with no memory could answer from the question alone in 4: `user_evidence|1|4c69f758-cc00-48db-a908-7485ef3c3d99|16` (gold is the certification named in the question), `user_evidence|1|6778a296-5b31-4ed2-a576-eaa706712df9|45` (channel name already in the question), `user_evidence|2|0050e213-5032-42a0-8041-b5eef2f8ab91|77` (the duration is stated in the question), `assistant_facts_evidence|1|581a7aa3-5c47-4995-98b8-bfc97915f8b5|30` ('use' replacing a quoted jargon verb). A 50% guess between two options named in the question in 3 (`assistant_facts_evidence|1|0ca7f1fa-ba51-4f86-9c09-21a6ff295db2|63`, `assistant_facts_evidence|1|4308b9d3-abb6-439b-94d5-246da7e0c420|68`, `user_evidence|1|3da2788d-3839-4060-8281-e12305b4b520|53`). Partly guessable in 1 (`assistant_facts_evidence|1|617e451b-db92-4a23-a44a-7ad699dc1000|61`).
+
+Still unread: the S2, S2_num, S7 and S1 near-duplicate flag populations beyond the 60-item flagged sample (1290, 2161, 7242 and 327 items; in the sample these flags had 0 key errors, and S7 found no world-knowledge question). The unflagged remainder of the subset (the 60-item random sample is the only evidence there) and the roughly 35% of data (by size) outside the subset.
 
 ## What prior reports already covered
 
@@ -129,7 +152,8 @@ Not counted above (`prior_reports.csv`): ConvoMem GitHub issue 1 (49% of `pre_mi
 - Subset of the data (858 files, about 65% by size), chosen by file-name order. Personas in the omitted files were not examined.
 - The 60-item random sample gives an upper bound of 6.0% on the key-error rate; it cannot rule out a 1 to 3% rate. No per-category rate can be estimated from 10 items.
 - Hand review by one reader, on evidence lines and their neighbours. For abstention items the check was that those lines do not give the answer, not an exhaustive search of every conversation. Long golds were read truncated in places (the visible part was checked).
-- D3 uses ratio >= 0.9. The 8 reviewed D3 items were all wording differences; the other 150 were not read.
+- D3 uses ratio >= 0.9. All 158 D3 items were read in the post-hoc extension (8 in the first pass, 150 after); see the confirmed-flaws section.
+- The post-hoc full reads checked D4 golds against the question and the final evidence message of each item (plus earlier evidence where a gold was computed or only partly visible), not against every filler line.
 - Sibling conflicts: whether two siblings appear in one test-case context was not checked, because `pre_mixed_testcases` (roughly 28 GB by the HF file listing) was not downloaded. If siblings never share a context they do no harm; if they do, the gold is ambiguous there.
 - S2 is a string heuristic. The 45% strict-miss rate on short golds mostly reflects sentence-form golds ("Your favorite local coffee shop is ...") against short evidence.
 - The benchmark's necessity claim (question unanswerable without the evidence) was not tested; no LLM was run.
