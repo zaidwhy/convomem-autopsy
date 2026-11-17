@@ -1,0 +1,7 @@
+benchmark,source,url,date,summary,counted_in_this_autopsy
+ConvoMem,GitHub issue 1,https://github.com/SalesforceAIResearch/ConvoMem/issues/1,2026-08-13,"pre_mixed_testcases: 49% of cases (119369/243830) contain evidence items from more than one distinct personId (reporter's count)",no
+PersonaMem-v1,GitHub issue 41,https://github.com/bowen-upenn/PersonaMem/issues/41,2026-08-06,"no-context baseline 49.2% (232/472) on 128k vs 25% chance",no
+PersonaMem-v2,GitHub issue 42,https://github.com/bowen-upenn/PersonaMem/issues/42,2026-08-08,"option length predicts the correct answer",no
+PersonaMem-v1,GitHub issue 21,https://github.com/bowen-upenn/PersonaMem/issues/21,2025-07-17,"error samples reported (screenshot only)",no
+MemoryAgentBench,GitHub issue 10,https://github.com/HUST-AI-HYZ/MemoryAgentBench/issues/10,2025-11-17,"questions answerable from world knowledge (example: Normandy country)",no
+HaluMem,GitHub issue 5,https://github.com/MemTensor/HaluMem/issues/5,2026-02-06,"list of dataset errors incl. memory records not supported by conversation",no
