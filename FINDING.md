@@ -189,3 +189,25 @@ python -I checks/no_memory_baseline.py --model llama3.1:8b --limit 300 --out out
 ```
 
 An end-to-end re-run from a fresh clone was not executed; each script was run in place.
+
+## Second reviewer
+
+Both reviewers are language models. No human has read the items. The second reviewer judged 100 items blind (the 60 random-sample items and 40 items drawn with `random.Random(4242)` from the 230 `flagged_full` ids), with ids committed first (`0e962cc`), then verdicts (`e940018`), and only then read the first reviewer's file. Scripts: `checks/second_review_sample.py`, `checks/review_agreement.py`. Verdicts: `out/second_review.jsonl`. The second reviewer read non-evidence messages truncated to 80-150 characters in most conversations (evidence messages in full, plus keyword searches for abstention items), not every word of every conversation.
+
+Raw agreement, as computed before any reconsideration:
+
+| Set | n | Agreement | Wilson 95% | Cohen's kappa |
+|---|---|---|---|---|
+| random | 60 | 57/60 = 0.950 | [0.863, 0.983] | -0.023 |
+| flagged_full | 40 | 13/40 = 0.325 | [0.201, 0.480] | 0.024 |
+
+The random-set kappa is near zero because almost every item is `correct` for both reviewers; with one dominant label, kappa is not informative and the raw rate should be read instead. Neither reviewer found a `definite_key_error` in either set.
+
+Random-set disagreements (3): `changing_evidence|2|28ae265c...|91` (first ambiguous, second correct: the assistant says the focus "must now pivot to Company B"); `preference_evidence|1|33f68d2f...|34` (first correct, second ambiguous: the rubric calls Flagstaff too far for a 3-hour limit from Tempe, which the second reviewer believes is wrong from general knowledge, not checked against a map); `preference_evidence|1|334374ad...|17` (first ambiguous, second correct: private red/green risk and growth notes taken as support for a risk and opportunity agenda; a closer call).
+
+Flagged-set disagreements (27 of 40):
+- 25 are first `evidence_label_wrong_answer_right` versus second `correct`. The first reviewer's reasons for this group are label-versus-text match ratios. In all 25 the labelled evidence is not a verbatim single message (stitched turns, or extra or reworded text), and the gold is supported either way. 13 are non-abstention items and 12 are abstention items. After re-reading, the second reviewer holds `evidence_label_wrong_answer_right` for the 13 non-abstention items, because the task definition names different wording as that verdict, and the first pass applied a looser test than the definition. For the 12 abstention items the second reviewer holds `correct`, because the task definition says a right refusal counts as correct. So the 25 reflect a rule difference, not a disagreement about the answers.
+- `abstention_evidence|1|443a4f82...|6`: first label verdict, second ambiguous. The user says the statistics struggle was "sophomore year" and "I finally got through it", so a time answer is defensible. Second reviewer holds ambiguous, weakly.
+- `user_evidence|3|46c13060...|35`: first label verdict, second ambiguous. The user lists three concerns about the campaign but never states a risk level, so "high" is an inference. Second reviewer holds ambiguous.
+
+Reading: on the random sample the two reviewers agree on almost everything, so the "no definite key errors" result does not rest on one model's judgement. On the flagged set, the agreement figure measures how strictly the label rule is applied, not whether answers are right. Not done: no human review, no third model, and the 190 flagged items outside the 40 drawn were not re-read by the second reviewer.
