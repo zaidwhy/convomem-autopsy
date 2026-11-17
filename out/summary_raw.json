@@ -1,0 +1,322 @@
+{
+ "signatures": [
+  {
+   "cat": "abstention_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 8917
+  },
+  {
+   "cat": "assistant_facts_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 7245
+  },
+  {
+   "cat": "changing_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 10204
+  },
+  {
+   "cat": "implicit_connection_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 4865
+  },
+  {
+   "cat": "preference_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 4062
+  },
+  {
+   "cat": "user_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 9866
+  }
+ ],
+ "trivial": {
+  "abstention_evidence": {
+   "n": 8917,
+   "distinct": 1,
+   "chance_uniform": 1.0,
+   "most_common": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 1.0,
+    "ci": [
+     0.9995693679842941,
+     1.0
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 1.0,
+    "ci": [
+     0.9995693679842941,
+     1.0
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 1.0,
+    "ci": [
+     0.9995693679842941,
+     1.0
+    ]
+   }
+  },
+  "assistant_facts_evidence": {
+   "n": 7245,
+   "distinct": 7133,
+   "chance_uniform": 0.00014019346698443852,
+   "most_common": {
+    "answer_norm_prefix": "the pomodoro technique",
+    "hits": 10,
+    "rate": 0.0013802622498274672,
+    "ci": [
+     0.000749914865789203,
+     0.0025391072036128936
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "python import necessary libraries import",
+    "hits": 1,
+    "rate": 0.00013802622498274673,
+    "ci": [
+     2.4364806714052116e-05,
+     0.0007815018851446857
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "i suggested using zapier to create an au",
+    "hits": 1,
+    "rate": 0.00013802622498274673,
+    "ci": [
+     2.4364806714052116e-05,
+     0.0007815018851446857
+    ]
+   }
+  },
+  "changing_evidence": {
+   "n": 10204,
+   "distinct": 10018,
+   "chance_uniform": 9.982032341784787e-05,
+   "most_common": {
+    "answer_norm_prefix": "progressive",
+    "hits": 11,
+    "rate": 0.0010780086240689925,
+    "ci": [
+     0.0006020600920426942,
+     0.0019294838927307373
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "initially i listed the old digital camer",
+    "hits": 1,
+    "rate": 9.800078400627205e-05,
+    "ci": [
+     1.7299309257634683e-05,
+     0.0005549666240225213
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "no you are no longer scheduled to call d",
+    "hits": 1,
+    "rate": 9.800078400627205e-05,
+    "ci": [
+     1.7299309257634683e-05,
+     0.0005549666240225213
+    ]
+   }
+  },
+  "implicit_connection_evidence": {
+   "n": 4865,
+   "distinct": 4865,
+   "chance_uniform": 0.00020554984583761563,
+   "most_common": {
+    "answer_norm_prefix": "a good response should acknowledge the p",
+    "hits": 1,
+    "rate": 0.00020554984583761563,
+    "ci": [
+     3.628458322979497e-05,
+     0.0011635079916611194
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "a good response should synthesize all 3 ",
+    "hits": 1,
+    "rate": 0.00020554984583761563,
+    "ci": [
+     3.628458322979497e-05,
+     0.0011635079916611194
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "a good response should acknowledge the p",
+    "hits": 1,
+    "rate": 0.00020554984583761563,
+    "ci": [
+     3.628458322979497e-05,
+     0.0011635079916611194
+    ]
+   }
+  },
+  "user_evidence": {
+   "n": 9866,
+   "distinct": 9657,
+   "chance_uniform": 0.00010355182768975873,
+   "most_common": {
+    "answer_norm_prefix": "15",
+    "hits": 9,
+    "rate": 0.0009122237989053314,
+    "ci": [
+     0.00048000466540734323,
+     0.0017329589144742224
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "yes your suggested function for each sce",
+    "hits": 1,
+    "rate": 0.00010135819987837016,
+    "ci": [
+     1.7891974953521746e-05,
+     0.0005739716269912146
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "green",
+    "hits": 1,
+    "rate": 0.00010135819987837016,
+    "ci": [
+     1.7891974953521746e-05,
+     0.0005739716269912146
+    ]
+   }
+  },
+  "ALL_non_preference": {
+   "n": 41097,
+   "distinct": 31541,
+   "chance_uniform": 3.17047652262135e-05,
+   "most_common": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 0.21697447502250772,
+    "ci": [
+     0.21301588985231995,
+     0.22098596766682146
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "python import necessary libraries import",
+    "hits": 1,
+    "rate": 2.4332676351071856e-05,
+    "ci": [
+     4.2952172899731785e-06,
+     0.00013783325922278028
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 0.21697447502250772,
+    "ci": [
+     0.21301588985231995,
+     0.22098596766682146
+    ]
+   }
+  },
+  "FACTUAL_user_assistant_changing": {
+   "n": 27315,
+   "distinct": 26675,
+   "chance_uniform": 3.748828491096532e-05,
+   "most_common": {
+    "answer_norm_prefix": "15",
+    "hits": 13,
+    "rate": 0.00047592897675269996,
+    "ci": [
+     0.00027816529790300915,
+     0.000814179701088456
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "python import necessary libraries import",
+    "hits": 1,
+    "rate": 3.660992128866923e-05,
+    "ci": [
+     6.462413059790848e-06,
+     0.0002073680298825629
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "green",
+    "hits": 1,
+    "rate": 3.660992128866923e-05,
+    "ci": [
+     6.462413059790848e-06,
+     0.0002073680298825629
+    ]
+   }
+  }
+ },
+ "global_exact_dup_question_groups": 325,
+ "n_items": 45159
+}

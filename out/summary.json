@@ -1,0 +1,1842 @@
+{
+ "revision": "e3e9b39115b02346824c70d349350de738f8be41",
+ "n_items": 45159,
+ "metrics": {
+  "D1_empty_or_missing|ALL": {
+   "hits": 0,
+   "n": 45159,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    8.50610781762678e-05
+   ]
+  },
+  "D1_empty_or_missing|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "D1_empty_or_missing|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "D1_empty_or_missing|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "D1_empty_or_missing|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "D1_empty_or_missing|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "D1_empty_or_missing|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "D2_personId_mismatch|ALL": {
+   "hits": 0,
+   "n": 45159,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    8.50610781762678e-05
+   ]
+  },
+  "D2_personId_mismatch|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "D2_personId_mismatch|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "D2_personId_mismatch|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "D2_personId_mismatch|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "D2_personId_mismatch|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "D2_personId_mismatch|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "D3_evidence_pointer_missing|ALL": {
+   "hits": 158,
+   "n": 45159,
+   "rate": 0.003498748865121017,
+   "ci": [
+    0.0029947678114299148,
+    0.004087195782286916
+   ]
+  },
+  "D3_evidence_pointer_missing|user_evidence": {
+   "hits": 21,
+   "n": 9866,
+   "rate": 0.002128522197445773,
+   "ci": [
+    0.0013926479998937907,
+    0.003251965546893018
+   ]
+  },
+  "D3_evidence_pointer_missing|assistant_facts_evidence": {
+   "hits": 62,
+   "n": 7245,
+   "rate": 0.008557625948930296,
+   "ci": [
+    0.006681666298199032,
+    0.010954475730342467
+   ]
+  },
+  "D3_evidence_pointer_missing|changing_evidence": {
+   "hits": 14,
+   "n": 10204,
+   "rate": 0.0013720109760878088,
+   "ci": [
+    0.0008174742612587889,
+    0.0023018531389626257
+   ]
+  },
+  "D3_evidence_pointer_missing|abstention_evidence": {
+   "hits": 57,
+   "n": 8917,
+   "rate": 0.006392284400583156,
+   "ci": [
+    0.004937421740890412,
+    0.008272273631348906
+   ]
+  },
+  "D3_evidence_pointer_missing|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "D3_evidence_pointer_missing|implicit_connection_evidence": {
+   "hits": 4,
+   "n": 4865,
+   "rate": 0.0008221993833504625,
+   "ci": [
+    0.0003197771089737246,
+    0.002112341446700791
+   ]
+  },
+  "D4_same_question_diff_answer|ALL": {
+   "hits": 100,
+   "n": 45159,
+   "rate": 0.002214398015899378,
+   "ci": [
+    0.0018211545660083103,
+    0.0026923258258012253
+   ]
+  },
+  "D4_same_question_diff_answer|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "D4_same_question_diff_answer|assistant_facts_evidence": {
+   "hits": 6,
+   "n": 7245,
+   "rate": 0.0008281573498964803,
+   "ci": [
+    0.0003796002880931737,
+    0.0018057971690674296
+   ]
+  },
+  "D4_same_question_diff_answer|changing_evidence": {
+   "hits": 79,
+   "n": 10204,
+   "rate": 0.007742061936495492,
+   "ci": [
+    0.006216938712352854,
+    0.009637696022574853
+   ]
+  },
+  "D4_same_question_diff_answer|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "D4_same_question_diff_answer|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "D4_same_question_diff_answer|implicit_connection_evidence": {
+   "hits": 15,
+   "n": 4865,
+   "rate": 0.003083247687564234,
+   "ci": [
+    0.0018694100100699544,
+    0.0050812371418111
+   ]
+  },
+  "S1_near_dup_question|ALL": {
+   "hits": 327,
+   "n": 45159,
+   "rate": 0.007241081511990965,
+   "ci": [
+    0.0064999054421015215,
+    0.008066086791655531
+   ]
+  },
+  "S1_near_dup_question|user_evidence": {
+   "hits": 9,
+   "n": 9866,
+   "rate": 0.0009122237989053314,
+   "ci": [
+    0.00048000466540734323,
+    0.0017329589144742224
+   ]
+  },
+  "S1_near_dup_question|assistant_facts_evidence": {
+   "hits": 23,
+   "n": 7245,
+   "rate": 0.0031746031746031746,
+   "ci": [
+    0.002116387060237587,
+    0.00475941499894936
+   ]
+  },
+  "S1_near_dup_question|changing_evidence": {
+   "hits": 161,
+   "n": 10204,
+   "rate": 0.0157781262250098,
+   "ci": [
+    0.013536016317378358,
+    0.018384698439794202
+   ]
+  },
+  "S1_near_dup_question|abstention_evidence": {
+   "hits": 116,
+   "n": 8917,
+   "rate": 0.013008859481888527,
+   "ci": [
+    0.01085782457429831,
+    0.015579322342423084
+   ]
+  },
+  "S1_near_dup_question|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "S1_near_dup_question|implicit_connection_evidence": {
+   "hits": 18,
+   "n": 4865,
+   "rate": 0.0036998972250770813,
+   "ci": [
+    0.0023416797505943776,
+    0.005841293382070278
+   ]
+  },
+  "S1_near_dup_diff_gold|ALL": {
+   "hits": 149,
+   "n": 45159,
+   "rate": 0.0032994530436900728,
+   "ci": [
+    0.0028111239252513365,
+    0.0038722819302384995
+   ]
+  },
+  "S1_near_dup_diff_gold|user_evidence": {
+   "hits": 8,
+   "n": 9866,
+   "rate": 0.0008108655990269613,
+   "ci": [
+    0.00041093611725034754,
+    0.0015993899653891145
+   ]
+  },
+  "S1_near_dup_diff_gold|assistant_facts_evidence": {
+   "hits": 14,
+   "n": 7245,
+   "rate": 0.001932367149758454,
+   "ci": [
+    0.0011514442514971217,
+    0.0032412024301464665
+   ]
+  },
+  "S1_near_dup_diff_gold|changing_evidence": {
+   "hits": 105,
+   "n": 10204,
+   "rate": 0.010290082320658565,
+   "ci": [
+    0.008507994675021228,
+    0.012440762993788993
+   ]
+  },
+  "S1_near_dup_diff_gold|abstention_evidence": {
+   "hits": 6,
+   "n": 8917,
+   "rate": 0.000672872042166648,
+   "ci": [
+    0.0003084144164676432,
+    0.0014673821630837747
+   ]
+  },
+  "S1_near_dup_diff_gold|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "S1_near_dup_diff_gold|implicit_connection_evidence": {
+   "hits": 16,
+   "n": 4865,
+   "rate": 0.00328879753340185,
+   "ci": [
+    0.002025422692952013,
+    0.005335999785856909
+   ]
+  },
+  "S2_short_gold_not_in_evidence|ALL": {
+   "hits": 1290,
+   "n": 27315,
+   "rate": 0.047226798462383306,
+   "ci": [
+    0.04477422225289548,
+    0.049806713418988936
+   ]
+  },
+  "S2_short_gold_not_in_evidence|user_evidence": {
+   "hits": 244,
+   "n": 9866,
+   "rate": 0.02473140077032232,
+   "ci": [
+    0.021846817737710633,
+    0.027985957694065294
+   ]
+  },
+  "S2_short_gold_not_in_evidence|assistant_facts_evidence": {
+   "hits": 192,
+   "n": 7245,
+   "rate": 0.02650103519668737,
+   "ci": [
+    0.02304585739437191,
+    0.0304580845320181
+   ]
+  },
+  "S2_short_gold_not_in_evidence|changing_evidence": {
+   "hits": 854,
+   "n": 10204,
+   "rate": 0.08369266954135633,
+   "ci": [
+    0.07847484259868494,
+    0.08922384112697164
+   ]
+  },
+  "S2_short_gold_not_in_evidence|abstention_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_short_gold_not_in_evidence|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_short_gold_not_in_evidence|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_strict_miss_all_factual|ALL": {
+   "hits": 23524,
+   "n": 27315,
+   "rate": 0.861211788394655,
+   "ci": [
+    0.8570609408734559,
+    0.8652610480647573
+   ]
+  },
+  "S2_strict_miss_all_factual|user_evidence": {
+   "hits": 8615,
+   "n": 9866,
+   "rate": 0.8732008919521589,
+   "ci": [
+    0.8664893061627161,
+    0.8796219586827094
+   ]
+  },
+  "S2_strict_miss_all_factual|assistant_facts_evidence": {
+   "hits": 5478,
+   "n": 7245,
+   "rate": 0.7561076604554865,
+   "ci": [
+    0.7460851825730584,
+    0.7658586844304638
+   ]
+  },
+  "S2_strict_miss_all_factual|changing_evidence": {
+   "hits": 9431,
+   "n": 10204,
+   "rate": 0.9242453939631518,
+   "ci": [
+    0.9189500625724133,
+    0.9292214059190258
+   ]
+  },
+  "S2_strict_miss_all_factual|abstention_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_strict_miss_all_factual|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_strict_miss_all_factual|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_strict_miss_short_gold|ALL": {
+   "hits": 2743,
+   "n": 6051,
+   "rate": 0.45331350190051234,
+   "ci": [
+    0.44080379124929026,
+    0.46588245467991785
+   ]
+  },
+  "S2_strict_miss_short_gold|user_evidence": {
+   "hits": 423,
+   "n": 1630,
+   "rate": 0.25950920245398773,
+   "ci": [
+    0.23881085865153986,
+    0.28133846304525123
+   ]
+  },
+  "S2_strict_miss_short_gold|assistant_facts_evidence": {
+   "hits": 353,
+   "n": 1693,
+   "rate": 0.20850561134081513,
+   "ci": [
+    0.18982489095416746,
+    0.22850620135285754
+   ]
+  },
+  "S2_strict_miss_short_gold|changing_evidence": {
+   "hits": 1967,
+   "n": 2728,
+   "rate": 0.7210410557184751,
+   "ci": [
+    0.7039091896658317,
+    0.7375512522573018
+   ]
+  },
+  "S2_strict_miss_short_gold|abstention_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_strict_miss_short_gold|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_strict_miss_short_gold|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|ALL": {
+   "hits": 2161,
+   "n": 27315,
+   "rate": 0.0791140399048142,
+   "ci": [
+    0.07597190685971544,
+    0.08237454367206698
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|user_evidence": {
+   "hits": 1214,
+   "n": 9866,
+   "rate": 0.12304885465234137,
+   "ci": [
+    0.11671313047830892,
+    0.12967801727830755
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|assistant_facts_evidence": {
+   "hits": 701,
+   "n": 7245,
+   "rate": 0.09675638371290546,
+   "ci": [
+    0.09016116990305155,
+    0.10377900393106838
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|changing_evidence": {
+   "hits": 246,
+   "n": 10204,
+   "rate": 0.024108192865542926,
+   "ci": [
+    0.021306319783939924,
+    0.027268258410925485
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|abstention_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S2_num_digit_gold_not_in_evidence|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S3_stale_answer|ALL": {
+   "hits": 14,
+   "n": 10204,
+   "rate": 0.0013720109760878088,
+   "ci": [
+    0.0008174742612587889,
+    0.0023018531389626257
+   ]
+  },
+  "S3_stale_answer|user_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S3_stale_answer|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S3_stale_answer|changing_evidence": {
+   "hits": 14,
+   "n": 10204,
+   "rate": 0.0013720109760878088,
+   "ci": [
+    0.0008174742612587889,
+    0.0023018531389626257
+   ]
+  },
+  "S3_stale_answer|abstention_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S3_stale_answer|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S3_stale_answer|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S3_order_inverted|ALL": {
+   "hits": 0,
+   "n": 26412,
+   "rate": 0.0,
+   "ci": [
+    1.3550556240694951e-20,
+    0.00014542788596975836
+   ]
+  },
+  "S3_order_inverted|user_evidence": {
+   "hits": 0,
+   "n": 5893,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0006514673889154493
+   ]
+  },
+  "S3_order_inverted|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 2745,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.001397534146747488
+   ]
+  },
+  "S3_order_inverted|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "S3_order_inverted|abstention_evidence": {
+   "hits": 0,
+   "n": 4441,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.000864282767691879
+   ]
+  },
+  "S3_order_inverted|preference_evidence": {
+   "hits": 0,
+   "n": 97,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.03809538920445529
+   ]
+  },
+  "S3_order_inverted|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 3032,
+   "rate": 0.0,
+   "ci": [
+    1.0828302066142216e-19,
+    0.0012654151652708098
+   ]
+  },
+  "S4_abstention_gold_not_refusal|ALL": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "S4_abstention_gold_not_refusal|user_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S4_abstention_gold_not_refusal|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S4_abstention_gold_not_refusal|changing_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S4_abstention_gold_not_refusal|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "S4_abstention_gold_not_refusal|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S4_abstention_gold_not_refusal|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "S5_gold_in_question|ALL": {
+   "hits": 8,
+   "n": 45159,
+   "rate": 0.00017715184127195023,
+   "ci": [
+    8.976880360932414e-05,
+    0.00034956581965760506
+   ]
+  },
+  "S5_gold_in_question|user_evidence": {
+   "hits": 4,
+   "n": 9866,
+   "rate": 0.00040543279951348065,
+   "ci": [
+    0.0001576732877539244,
+    0.0010421028059171228
+   ]
+  },
+  "S5_gold_in_question|assistant_facts_evidence": {
+   "hits": 4,
+   "n": 7245,
+   "rate": 0.0005521048999309869,
+   "ci": [
+    0.00021471962863309443,
+    0.0014188655224067627
+   ]
+  },
+  "S5_gold_in_question|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "S5_gold_in_question|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "S5_gold_in_question|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "S5_gold_in_question|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "S6_evidence_text_multiple_matches|ALL": {
+   "hits": 117,
+   "n": 45159,
+   "rate": 0.002590845678602272,
+   "ci": [
+    0.00216241248342849,
+    0.0031038991916987014
+   ]
+  },
+  "S6_evidence_text_multiple_matches|user_evidence": {
+   "hits": 7,
+   "n": 9866,
+   "rate": 0.0007095073991485911,
+   "ci": [
+    0.0003437285076058209,
+    0.0014639600777915374
+   ]
+  },
+  "S6_evidence_text_multiple_matches|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "S6_evidence_text_multiple_matches|changing_evidence": {
+   "hits": 87,
+   "n": 10204,
+   "rate": 0.008526068208545668,
+   "ci": [
+    0.006917836621600786,
+    0.01050422055452154
+   ]
+  },
+  "S6_evidence_text_multiple_matches|abstention_evidence": {
+   "hits": 17,
+   "n": 8917,
+   "rate": 0.0019064707861388358,
+   "ci": [
+    0.001190680751974312,
+    0.0030512508612941035
+   ]
+  },
+  "S6_evidence_text_multiple_matches|preference_evidence": {
+   "hits": 1,
+   "n": 4062,
+   "rate": 0.0002461841457410143,
+   "ci": [
+    4.345775079244969e-05,
+    0.001393292761081894
+   ]
+  },
+  "S6_evidence_text_multiple_matches|implicit_connection_evidence": {
+   "hits": 5,
+   "n": 4865,
+   "rate": 0.0010277492291880781,
+   "ci": [
+    0.0004390639493446318,
+    0.002403829933257751
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|ALL": {
+   "hits": 0,
+   "n": 45159,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    8.50610781762678e-05
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "S6_evidence_also_in_unflagged_conv|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|ALL": {
+   "hits": 24,
+   "n": 45159,
+   "rate": 0.0005314555238158506,
+   "ci": [
+    0.0003571756420404964,
+    0.0007907060714077554
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|abstention_evidence": {
+   "hits": 24,
+   "n": 8917,
+   "rate": 0.002691488168666592,
+   "ci": [
+    0.0018093857516795202,
+    0.004001904519408804
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "S6_n_ev_convs_ne_n_ev|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "S7_no_person_or_memory_cue|ALL": {
+   "hits": 7242,
+   "n": 45159,
+   "rate": 0.16036670431143293,
+   "ci": [
+    0.15701118214725615,
+    0.16378000562424136
+   ]
+  },
+  "S7_no_person_or_memory_cue|user_evidence": {
+   "hits": 718,
+   "n": 9866,
+   "rate": 0.07277518751266977,
+   "ci": [
+    0.0678138801969256,
+    0.07806906892760747
+   ]
+  },
+  "S7_no_person_or_memory_cue|assistant_facts_evidence": {
+   "hits": 166,
+   "n": 7245,
+   "rate": 0.022912353347135955,
+   "ci": [
+    0.019711446127536503,
+    0.0266189358192838
+   ]
+  },
+  "S7_no_person_or_memory_cue|changing_evidence": {
+   "hits": 3556,
+   "n": 10204,
+   "rate": 0.3484907879263034,
+   "ci": [
+    0.33930394780012507,
+    0.3577916654390146
+   ]
+  },
+  "S7_no_person_or_memory_cue|abstention_evidence": {
+   "hits": 1848,
+   "n": 8917,
+   "rate": 0.2072445889873276,
+   "ci": [
+    0.19895839006315974,
+    0.2157829276170017
+   ]
+  },
+  "S7_no_person_or_memory_cue|preference_evidence": {
+   "hits": 720,
+   "n": 4062,
+   "rate": 0.17725258493353027,
+   "ci": [
+    0.1658151313291627,
+    0.18929993267136305
+   ]
+  },
+  "S7_no_person_or_memory_cue|implicit_connection_evidence": {
+   "hits": 234,
+   "n": 4865,
+   "rate": 0.04809866392600205,
+   "ci": [
+    0.042434222602956685,
+    0.05447622114612728
+   ]
+  },
+  "FFFD_in_question_or_answer|ALL": {
+   "hits": 0,
+   "n": 45159,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    8.50610781762678e-05
+   ]
+  },
+  "FFFD_in_question_or_answer|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "FFFD_in_question_or_answer|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "FFFD_in_question_or_answer|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "FFFD_in_question_or_answer|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "FFFD_in_question_or_answer|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "FFFD_in_question_or_answer|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "FFFD_in_evidence_text|ALL": {
+   "hits": 0,
+   "n": 45159,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    8.50610781762678e-05
+   ]
+  },
+  "FFFD_in_evidence_text|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "FFFD_in_evidence_text|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "FFFD_in_evidence_text|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "FFFD_in_evidence_text|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "FFFD_in_evidence_text|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "FFFD_in_evidence_text|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "FFFD_in_any_conversation_message|ALL": {
+   "hits": 0,
+   "n": 45159,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    8.50610781762678e-05
+   ]
+  },
+  "FFFD_in_any_conversation_message|user_evidence": {
+   "hits": 0,
+   "n": 9866,
+   "rate": 0.0,
+   "ci": [
+    -2.7094504317429945e-20,
+    0.00038922610470263274
+   ]
+  },
+  "FFFD_in_any_conversation_message|assistant_facts_evidence": {
+   "hits": 0,
+   "n": 7245,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0005299605387983646
+   ]
+  },
+  "FFFD_in_any_conversation_message|changing_evidence": {
+   "hits": 0,
+   "n": 10204,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00037633812813082836
+   ]
+  },
+  "FFFD_in_any_conversation_message|abstention_evidence": {
+   "hits": 0,
+   "n": 8917,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.00043063201570578267
+   ]
+  },
+  "FFFD_in_any_conversation_message|preference_evidence": {
+   "hits": 0,
+   "n": 4062,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0009448474333087645
+   ]
+  },
+  "FFFD_in_any_conversation_message|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 4865,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.0007890172479630472
+   ]
+  },
+  "yes_no_question|ALL": {
+   "hits": 4119,
+   "n": 45159,
+   "rate": 0.09121105427489537,
+   "ci": [
+    0.08859025521994647,
+    0.09390139738678407
+   ]
+  },
+  "yes_no_question|user_evidence": {
+   "hits": 659,
+   "n": 9866,
+   "rate": 0.06679505371984594,
+   "ci": [
+    0.06203515478528428,
+    0.07189218200196468
+   ]
+  },
+  "yes_no_question|assistant_facts_evidence": {
+   "hits": 2633,
+   "n": 7245,
+   "rate": 0.3634230503795721,
+   "ci": [
+    0.3524224961929569,
+    0.37456836535380394
+   ]
+  },
+  "yes_no_question|changing_evidence": {
+   "hits": 120,
+   "n": 10204,
+   "rate": 0.011760094080752646,
+   "ci": [
+    0.009844436054129022,
+    0.014043238691921114
+   ]
+  },
+  "yes_no_question|abstention_evidence": {
+   "hits": 164,
+   "n": 8917,
+   "rate": 0.01839183581922171,
+   "ci": [
+    0.015803259438421893,
+    0.021395203989064582
+   ]
+  },
+  "yes_no_question|preference_evidence": {
+   "hits": 305,
+   "n": 4062,
+   "rate": 0.07508616445100935,
+   "ci": [
+    0.06737720737259449,
+    0.08359807902321593
+   ]
+  },
+  "yes_no_question|implicit_connection_evidence": {
+   "hits": 238,
+   "n": 4865,
+   "rate": 0.04892086330935252,
+   "ci": [
+    0.04320736068738619,
+    0.055346184369409246
+   ]
+  },
+  "yes_no_gold_given_yn_question|ALL": {
+   "hits": 107,
+   "n": 4119,
+   "rate": 0.02597717892692401,
+   "ci": [
+    0.02154326970711613,
+    0.031294462404639026
+   ]
+  },
+  "yes_no_gold_given_yn_question|user_evidence": {
+   "hits": 23,
+   "n": 659,
+   "rate": 0.03490136570561457,
+   "ci": [
+    0.02336728200506794,
+    0.05182655012616824
+   ]
+  },
+  "yes_no_gold_given_yn_question|assistant_facts_evidence": {
+   "hits": 21,
+   "n": 2633,
+   "rate": 0.007975693125712115,
+   "ci": [
+    0.005222519253794814,
+    0.012162522001622275
+   ]
+  },
+  "yes_no_gold_given_yn_question|changing_evidence": {
+   "hits": 63,
+   "n": 120,
+   "rate": 0.525,
+   "ci": [
+    0.4362683592400492,
+    0.6121806272071544
+   ]
+  },
+  "yes_no_gold_given_yn_question|abstention_evidence": {
+   "hits": 0,
+   "n": 164,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.022888247013851153
+   ]
+  },
+  "yes_no_gold_given_yn_question|preference_evidence": {
+   "hits": 0,
+   "n": 305,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.012438738822749264
+   ]
+  },
+  "yes_no_gold_given_yn_question|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 238,
+   "rate": 0.0,
+   "ci": [
+    1.7071677795816769e-18,
+    0.015884777474181447
+   ]
+  },
+  "gold_is_yes_given_yn_gold|ALL": {
+   "hits": 298,
+   "n": 473,
+   "rate": 0.6300211416490487,
+   "ci": [
+    0.5856263656835875,
+    0.6723209275055974
+   ]
+  },
+  "gold_is_yes_given_yn_gold|user_evidence": {
+   "hits": 219,
+   "n": 276,
+   "rate": 0.7934782608695652,
+   "ci": [
+    0.7418489635905389,
+    0.8370499563698958
+   ]
+  },
+  "gold_is_yes_given_yn_gold|assistant_facts_evidence": {
+   "hits": 60,
+   "n": 63,
+   "rate": 0.9523809523809523,
+   "ci": [
+    0.8690882244316417,
+    0.9836741271577876
+   ]
+  },
+  "gold_is_yes_given_yn_gold|changing_evidence": {
+   "hits": 19,
+   "n": 134,
+   "rate": 0.1417910447761194,
+   "ci": [
+    0.09268933972705254,
+    0.21085908106899162
+   ]
+  },
+  "gold_is_yes_given_yn_gold|abstention_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gold_is_yes_given_yn_gold|preference_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gold_is_yes_given_yn_gold|implicit_connection_evidence": {
+   "hits": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "trivial": {
+  "abstention_evidence": {
+   "n": 8917,
+   "distinct": 1,
+   "chance_uniform": 1.0,
+   "most_common": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 1.0,
+    "ci": [
+     0.9995693679842941,
+     1.0
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 1.0,
+    "ci": [
+     0.9995693679842941,
+     1.0
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 1.0,
+    "ci": [
+     0.9995693679842941,
+     1.0
+    ]
+   }
+  },
+  "assistant_facts_evidence": {
+   "n": 7245,
+   "distinct": 7133,
+   "chance_uniform": 0.00014019346698443852,
+   "most_common": {
+    "answer_norm_prefix": "the pomodoro technique",
+    "hits": 10,
+    "rate": 0.0013802622498274672,
+    "ci": [
+     0.000749914865789203,
+     0.0025391072036128936
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "python import necessary libraries import",
+    "hits": 1,
+    "rate": 0.00013802622498274673,
+    "ci": [
+     2.4364806714052116e-05,
+     0.0007815018851446857
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "i suggested using zapier to create an au",
+    "hits": 1,
+    "rate": 0.00013802622498274673,
+    "ci": [
+     2.4364806714052116e-05,
+     0.0007815018851446857
+    ]
+   }
+  },
+  "changing_evidence": {
+   "n": 10204,
+   "distinct": 10018,
+   "chance_uniform": 9.982032341784787e-05,
+   "most_common": {
+    "answer_norm_prefix": "progressive",
+    "hits": 11,
+    "rate": 0.0010780086240689925,
+    "ci": [
+     0.0006020600920426942,
+     0.0019294838927307373
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "initially i listed the old digital camer",
+    "hits": 1,
+    "rate": 9.800078400627205e-05,
+    "ci": [
+     1.7299309257634683e-05,
+     0.0005549666240225213
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "no you are no longer scheduled to call d",
+    "hits": 1,
+    "rate": 9.800078400627205e-05,
+    "ci": [
+     1.7299309257634683e-05,
+     0.0005549666240225213
+    ]
+   }
+  },
+  "implicit_connection_evidence": {
+   "n": 4865,
+   "distinct": 4865,
+   "chance_uniform": 0.00020554984583761563,
+   "most_common": {
+    "answer_norm_prefix": "a good response should acknowledge the p",
+    "hits": 1,
+    "rate": 0.00020554984583761563,
+    "ci": [
+     3.628458322979497e-05,
+     0.0011635079916611194
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "a good response should synthesize all 3 ",
+    "hits": 1,
+    "rate": 0.00020554984583761563,
+    "ci": [
+     3.628458322979497e-05,
+     0.0011635079916611194
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "a good response should acknowledge the p",
+    "hits": 1,
+    "rate": 0.00020554984583761563,
+    "ci": [
+     3.628458322979497e-05,
+     0.0011635079916611194
+    ]
+   }
+  },
+  "user_evidence": {
+   "n": 9866,
+   "distinct": 9657,
+   "chance_uniform": 0.00010355182768975873,
+   "most_common": {
+    "answer_norm_prefix": "15",
+    "hits": 9,
+    "rate": 0.0009122237989053314,
+    "ci": [
+     0.00048000466540734323,
+     0.0017329589144742224
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "yes your suggested function for each sce",
+    "hits": 1,
+    "rate": 0.00010135819987837016,
+    "ci": [
+     1.7891974953521746e-05,
+     0.0005739716269912146
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "green",
+    "hits": 1,
+    "rate": 0.00010135819987837016,
+    "ci": [
+     1.7891974953521746e-05,
+     0.0005739716269912146
+    ]
+   }
+  },
+  "ALL_non_preference": {
+   "n": 41097,
+   "distinct": 31541,
+   "chance_uniform": 3.17047652262135e-05,
+   "most_common": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 0.21697447502250772,
+    "ci": [
+     0.21301588985231995,
+     0.22098596766682146
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "python import necessary libraries import",
+    "hits": 1,
+    "rate": 2.4332676351071856e-05,
+    "ci": [
+     4.2952172899731785e-06,
+     0.00013783325922278028
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "there is no information in prior convers",
+    "hits": 8917,
+    "rate": 0.21697447502250772,
+    "ci": [
+     0.21301588985231995,
+     0.22098596766682146
+    ]
+   }
+  },
+  "FACTUAL_user_assistant_changing": {
+   "n": 27315,
+   "distinct": 26675,
+   "chance_uniform": 3.748828491096532e-05,
+   "most_common": {
+    "answer_norm_prefix": "15",
+    "hits": 13,
+    "rate": 0.00047592897675269996,
+    "ci": [
+     0.00027816529790300915,
+     0.000814179701088456
+    ]
+   },
+   "longest": {
+    "answer_norm_prefix": "python import necessary libraries import",
+    "hits": 1,
+    "rate": 3.660992128866923e-05,
+    "ci": [
+     6.462413059790848e-06,
+     0.0002073680298825629
+    ]
+   },
+   "first": {
+    "answer_norm_prefix": "green",
+    "hits": 1,
+    "rate": 3.660992128866923e-05,
+    "ci": [
+     6.462413059790848e-06,
+     0.0002073680298825629
+    ]
+   }
+  }
+ },
+ "global_exact_dup_question_groups": 325,
+ "dup_kinds": {
+  "exact_dup_same_answer": 33,
+  "D4_contradiction": 47,
+  "near_dup_different_gold": 80
+ },
+ "signatures": [
+  {
+   "cat": "abstention_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 8917
+  },
+  {
+   "cat": "assistant_facts_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 7245
+  },
+  {
+   "cat": "changing_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 10204
+  },
+  {
+   "cat": "implicit_connection_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 4865
+  },
+  {
+   "cat": "preference_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 4062
+  },
+  {
+   "cat": "user_evidence",
+   "keys": [
+    "answer",
+    "category",
+    "conversations",
+    "core_model_name",
+    "message_evidences",
+    "personId",
+    "question",
+    "scenario_description",
+    "use_case_model_name"
+   ],
+   "n": 9866
+  }
+ ]
+}
