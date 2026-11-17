@@ -185,3 +185,4 @@ changing_evidence|5|21863ea9-dde4-4917-87d4-2c4af770144a|36  D4,S1_near_contra,S
 changing_evidence|2|142d7f3e-1d53-445e-9ad2-920df96b43ea|12  D4,S1_near_contra,S7
 changing_evidence|2|449033a5-c4a8-4f0f-973d-7b59a5656413|76  S2
 ```
+- 2026-11-18 (after hand review): (1) D4 as defined (exact normalised question, different normalised gold) turned out to include paraphrase pairs ("Thursday at 1 PM" vs "The client meeting is scheduled for Thursday at 1 PM."). Post-hoc, `checks/d4_refine.py` splits D4 groups into "semantic" (minimum pairwise gold token Jaccard below 0.5) and "paraphrase". The raw D4 numbers stay in the report; the refined split is labelled post-hoc. (2) Hand review is complete: 60 random and 60 flagged items, verdicts in out/hand_review.jsonl. (3) Wilson interval lower bound is clamped to 0 in checks/common.py (cosmetic). (4) No sampled item was added or dropped after reading began.

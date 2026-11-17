@@ -1,5 +1,5 @@
 """Print an item's question, gold, evidence messages and the evidence-bearing conversation messages to the terminal.
-Usage: python -I checks/show_item.py <item_id> [--context 2]   (terminal only, writes nothing)"""
+Usage: python -I checks/show_item.py <item_id> [--context 2] [--brief]   (terminal only, writes nothing)"""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import get_item, norm
@@ -16,7 +16,7 @@ def main():
     for k, e in enumerate(it["message_evidences"]):
         print(f"EV{k} [{e['speaker']}]:", e["text"])
     for ci, c in enumerate(it["conversations"]):
-        if not c.get("containsEvidence"):
+        if "--brief" in sys.argv or not c.get("containsEvidence"):
             continue
         ms = c["messages"]
         hit = [i for i, m in enumerate(ms) if any(x and x in norm(m["text"]) for x in evn)]

@@ -1,0 +1,134 @@
+{
+ "random": {
+  "n": 60,
+  "verdicts": {
+   "correct": 58,
+   "ambiguous": 2
+  },
+  "key_error": {
+   "k": 0,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.060173930477932895
+   ]
+  },
+  "ambiguous": {
+   "k": 2,
+   "rate": 0.03333333333333333,
+   "wilson95": [
+    0.009189126490150246,
+    0.11363987528925378
+   ]
+  },
+  "unanswerable_from_context": {
+   "k": 0,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.060173930477932895
+   ]
+  },
+  "evidence_label_wrong_answer_right": {
+   "k": 0,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.060173930477932895
+   ]
+  },
+  "note_prefix": {}
+ },
+ "flagged": {
+  "n": 60,
+  "verdicts": {
+   "evidence_label_wrong_answer_right": 8,
+   "correct": 52
+  },
+  "key_error": {
+   "k": 0,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.060173930477932895
+   ]
+  },
+  "ambiguous": {
+   "k": 0,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.060173930477932895
+   ]
+  },
+  "unanswerable_from_context": {
+   "k": 0,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.060173930477932895
+   ]
+  },
+  "evidence_label_wrong_answer_right": {
+   "k": 8,
+   "rate": 0.13333333333333333,
+   "wilson95": [
+    0.06914026978309641,
+    0.241653945900721
+   ]
+  },
+  "note_prefix": {
+   "SIBLING-CONFLICT": 12,
+   "LEAK": 7
+  }
+ },
+ "random_by_category": {
+  "user_evidence": {
+   "correct": 10
+  },
+  "assistant_facts_evidence": {
+   "correct": 10
+  },
+  "changing_evidence": {
+   "correct": 9,
+   "ambiguous": 1
+  },
+  "abstention_evidence": {
+   "correct": 10
+  },
+  "preference_evidence": {
+   "correct": 9,
+   "ambiguous": 1
+  },
+  "implicit_connection_evidence": {
+   "correct": 10
+  }
+ },
+ "flagged_by_flag": {
+  "D3": {
+   "evidence_label_wrong_answer_right": 8
+  },
+  "S7": {
+   "evidence_label_wrong_answer_right": 1,
+   "correct": 17
+  },
+  "D4": {
+   "correct": 14
+  },
+  "S1_near_contra": {
+   "correct": 13
+  },
+  "S2": {
+   "correct": 9
+  },
+  "S2_num": {
+   "correct": 9
+  },
+  "S3_stale": {
+   "correct": 7
+  },
+  "S5": {
+   "correct": 7
+  }
+ }
+}
