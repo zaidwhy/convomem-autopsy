@@ -159,10 +159,28 @@ Not counted above (`prior_reports.csv`): ConvoMem GitHub issue 1 (49% of `pre_mi
 - The benchmark's necessity claim (question unanswerable without the evidence) was not tested; no LLM was run.
 - Item ids are `category|N|personId|index`: N is the evidence-count directory, index is the position in the file's `evidence_items`.
 
+## No-memory baseline (run 2026-11-18)
+
+300 items (50 per category, seeded, stratified), each asked twice of `llama3.2:3b` through local Ollama at temperature 0: the question alone (`nocontext`), and the question after an unrelated item's evidence conversation (`control`). 600 calls, 600 rows, in `out/no_memory_llama3.2_3b.jsonl`. Scoring is string based (gold contained in the reply, or 80% token recall), not the benchmark's LLM judge. Wilson 95% intervals.
+
+| Category | Question alone | Wrong conversation (control) |
+|---|---|---|
+| abstention | 49/50 = 0.980 [0.895, 0.996] | 50/50 = 1.000 [0.929, 1.000] |
+| assistant_facts | 4/50 = 0.080 [0.032, 0.188] | 0/50 [0.000, 0.071] |
+| changing | 3/50 = 0.060 [0.021, 0.162] | 4/50 = 0.080 [0.032, 0.188] |
+| implicit_connection | 0/50 [0.000, 0.071] | 0/50 [0.000, 0.071] |
+| user | 0/50 [0.000, 0.071] | 0/50 [0.000, 0.071] |
+| four factual categories | 7/200 = 0.035 [0.017, 0.070] | 4/200 = 0.020 [0.008, 0.050] |
+| preference | not scored (rubric answers need a judge) | not scored |
+
+- The factual categories need the conversation. All 7 question-alone hits were read by hand and none is a real answer: in every one the model first says it does not know. Five then list popular options and the gold is among them (Dark Sky, Hop Fastpass, Talk Python to Me, Restorative Yoga, XMind); two are scorer artefacts where the gold sentence repeats the question's words. The 4 control hits were not read.
+- Abstention is solved without memory: a 3B model with no conversation refuses on 49 of 50, which matches the constant-string finding above. A system gets this category (21.7% of the examined items) by refusing whenever it retrieves nothing.
+- Limits: one 3B model, 50 items per category, string scoring, `implicit_connection` golds are long and may be under-credited by a string match, one Ollama 500 error mid-run (resumed; no row lost or duplicated).
+
 ## What this does NOT show
 
 - No claim about any system's score, rank or leaderboard position on ConvoMem.
-- No claim that the no-memory baseline was run. `checks/no_memory_baseline.py` exists and was tested only with `--dry-run`; no LLM was called by any part of this work.
+- No claim about a strong reader without memory. The no-memory baseline ran on one small local model (llama3.2:3b) with string scoring, not the benchmark's judge; a larger model could guess more.
 - No claim about `pre_mixed_testcases`, `filler_conversations`, the personas, or the LoCoMo and LongMemEval re-packagings in the same repository.
 - No claim that the benchmark's own validation pipeline (answerability and necessity tests, described in the code repository README) ran as described; only its output was examined.
 - No claim that the key-error rate is zero, only that none was found in 120 reviewed items.
@@ -181,7 +199,7 @@ python -I checks/review_summary.py      # out/review_summary.json from out/hand_
 python -I checks/show_item.py "<item id>" --brief    # print one item to the terminal
 ```
 
-No-memory baseline (not run; needs a local Ollama server on 127.0.0.1:11434 and a pulled model):
+No-memory baseline (needs a local Ollama server on 127.0.0.1:11434 and a pulled model; the run reported above used `--model llama3.2:3b --out out/no_memory_llama3.2_3b.jsonl`):
 
 ```
 python -I checks/no_memory_baseline.py --dry-run
