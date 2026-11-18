@@ -46,7 +46,8 @@ python -I checks/no_memory_baseline.py --model llama3.2:3b --limit 300 --out out
 ## Limits
 
 - Both reviewers of the 120 items were language models, one blind to the other. No human read
-  them. Agreement on the random 60 was 57 of 60.
+  them. Agreement on the random 60 was 57 of 60; on 40 of the flagged items it was 13 of 40
+  (FINDING.md gives the breakdown). Neither reviewer found a definite key error in either set.
 - A subset by file order, not a random sample of personas.
 - The no-memory baseline is one small model with string scoring, not the benchmark's own judge.
   The preference category was not scored.
